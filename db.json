@@ -1,0 +1,16 @@
+{
+    "Profiles": [
+        {
+            "id": 1,
+            "name": "test"
+        }
+
+    ],
+    "Shops":[
+        {
+            "id": 1,
+            "name": "test"
+        }
+
+    ]
+}
