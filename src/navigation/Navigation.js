@@ -17,7 +17,15 @@ export const Navigation = () => {
           <li>
             <Link to="/shops">Shops</Link>
           </li>
+          <li>
+            <Link to="/profiles/add">Zarejestruj</Link>
+          </li>
+          <li>
+            <Link to="#">Zaloguj</Link>
+          </li>
+
         </ul>
+
       </nav>
     </header>
   );

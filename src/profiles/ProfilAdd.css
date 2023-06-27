@@ -1,0 +1,14 @@
+form{
+    display:flex;
+    flex-direction: column;
+    padding:20px;
+    background-color: darkgrey;
+}
+
+.item{
+    padding:10px;
+}
+
+button{
+    padding:10px;
+}

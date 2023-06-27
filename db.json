@@ -1,16 +1,49 @@
 {
-    "Profiles": [
-        {
-            "id": 1,
-            "name": "test"
-        }
-
-    ],
-    "Shops":[
-        {
-            "id": 1,
-            "name": "test"
-        }
-
-    ]
+  "Profiles": [
+    {
+      "id": 1,
+      "name": "User2",
+      "email": "test@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "User3",
+      "email": "test@gmail.com"
+    },
+    {
+      "id": 3,
+      "name": "User3",
+      "email": "test@gmail.com"
+    },
+    {
+      "id": ":r1:",
+      "firstName": "Tomasz",
+      "lastName": "izdebski",
+      "email": "tomizdebski@gmail.com"
+    },
+    {
+      "id": 5,
+      "firstName": "dfdf",
+      "lastName": "ddf",
+      "email": "dfsdf@fdgf.pl"
+    },
+    {
+      "id": ":r5:",
+      "firstName": "sdffsd",
+      "lastName": "sfssf",
+      "email": "sssfffs@gmail.com"
+    },
+    {
+      "id": ":r7:",
+      "firstName": "dsfgs",
+      "lastName": "sdfsd",
+      "email": "sdfds@com.pl"
+    }
+  ],
+  "Shops": [
+    {
+      "id": 1,
+      "name": "test"
+    }
+  ]
 }
