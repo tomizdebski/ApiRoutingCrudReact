@@ -1,49 +1,40 @@
 {
   "Profiles": [
     {
-      "id": 1,
-      "name": "User2",
-      "email": "test@gmail.com"
-    },
-    {
-      "id": 2,
-      "name": "User3",
-      "email": "test@gmail.com"
-    },
-    {
-      "id": 3,
-      "name": "User3",
-      "email": "test@gmail.com"
-    },
-    {
       "id": ":r1:",
-      "firstName": "Tomasz",
-      "lastName": "izdebski",
-      "email": "tomizdebski@gmail.com"
+      "firstName": "testnr1",
+      "lastName": "testnr1",
+      "email": "qwert@op.pl",
+      "password": "tomi8766"
     },
     {
-      "id": 5,
-      "firstName": "dfdf",
-      "lastName": "ddf",
-      "email": "dfsdf@fdgf.pl"
-    },
-    {
-      "id": ":r5:",
-      "firstName": "sdffsd",
-      "lastName": "sfssf",
-      "email": "sssfffs@gmail.com"
-    },
-    {
-      "id": ":r7:",
-      "firstName": "dsfgs",
-      "lastName": "sdfsd",
-      "email": "sdfds@com.pl"
+      "id": ":r3:",
+      "firstName": "piotr",
+      "lastName": "wysocki",
+      "email": "froddoti@aol.com",
+      "password": "dwsa"
     }
   ],
   "Shops": [
     {
-      "id": 1,
-      "name": "test"
+      "id": ":r1:",
+      "nameShop": "<dev>tom</dev>",
+      "adressShop": "stuletnia 12/1",
+      "email": "tomizdebski@gmail.com",
+      "telephone": "502399628",
+      "city": "Warszawa",
+      "zip": "03-287",
+      "photo": "fgdg"
+    },
+    {
+      "id": ":r3:",
+      "nameShop": "dgrd",
+      "adressShop": "dgfg",
+      "email": "gdsf@fgdfg",
+      "telephone": "gdfg",
+      "city": "Warszawa",
+      "zip": "03-287",
+      "photo": "fgdg"
     }
   ]
 }

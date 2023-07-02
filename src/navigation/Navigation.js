@@ -21,7 +21,7 @@ export const Navigation = () => {
             <Link to="/profiles/add">Zarejestruj</Link>
           </li>
           <li>
-            <Link to="#">Zaloguj</Link>
+            <Link to="login">Zaloguj</Link>
           </li>
 
         </ul>

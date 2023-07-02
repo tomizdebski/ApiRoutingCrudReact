@@ -4,6 +4,13 @@ import {ProfilAdd} from "./profiles/ProfilAdd";
 import { ProfilEdit } from "./profiles/ProfilEdit";
 import { ProfilId } from "./profiles/ProfilId";
 import { Profiles } from "./profiles/Profiles";
+import { Login } from "./profiles/Login";
+import { Shops } from "./shops/Shops";
+import {ShopId} from "./shops/ShopId";
+import {ShopAdd} from "./shops/ShopAdd";
+import {ShopEdit} from "./shops/ShopEdit";
+
+
 
 
 function App() {
@@ -12,7 +19,9 @@ function App() {
     <BrowserRouter>
      <Navigation/>
       <Routes>
-        <Route element={<div>Page 1</div>} path="" />
+          <Route element={<div>Page 1</div>} path="" />
+
+          <Route element={<Login/>} path="login" />
         
           <Route path="profiles">
             <Route index element={<Profiles/>}/> 
@@ -22,13 +31,13 @@ function App() {
           </Route>
 
           <Route path="shops">
-            <Route index element={<div>shops</div>} />
-            <Route path=":id" element={<h1>shops id</h1>} />
-            <Route path="add" element={<h1>add shops</h1>} />
-            <Route path=":id/edit" element={<h1>edit shops</h1>} />
+            <Route index element={<Shops/>} />
+            <Route path=":id" element={<ShopId/>} />
+            <Route path="add" element={<ShopAdd/>} />
+            <Route path=":id/edit" element={<ShopEdit/>} />
           </Route>
 
-        <Route element={<div>404</div>} path="*"/>
+          <Route element={<div>404</div>} path="*"/>
       </Routes>
     </BrowserRouter>
   );
