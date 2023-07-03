@@ -1,18 +1,10 @@
 {
   "Profiles": [
     {
-      "id": ":r1:",
-      "firstName": "testnr1",
-      "lastName": "testnr1",
-      "email": "qwert@op.pl",
-      "password": "tomi8766"
-    },
-    {
-      "id": ":r3:",
-      "firstName": "piotr",
-      "lastName": "wysocki",
-      "email": "froddoti@aol.com",
-      "password": "dwsa"
+      "firstName": "roman",
+      "lastName": "izdebski",
+      "email": "tomizdebski@gmail.com",
+      "id": ":r0:"
     }
   ],
   "Shops": [

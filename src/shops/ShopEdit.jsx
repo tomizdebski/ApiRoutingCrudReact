@@ -1,7 +1,7 @@
 import {updateId} from "../crud"
 
 
-export const ShopEdit = ()=> {
+const ShopEdit = ()=> {
 
     return(
         <>
@@ -9,3 +9,4 @@ export const ShopEdit = ()=> {
         </>
     )
 }
+export default ShopEdit;

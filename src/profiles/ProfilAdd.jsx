@@ -1,15 +1,26 @@
-import { add, updateId, deleteId } from "../crud"
+import { add, } from "../crud"
 import React from 'react';
+import { useContext, useEffect } from 'react';
+import { MyContext } from '../MyContext';
 import { useId } from "react";
 import "./ProfilAdd.css"
 import { useFormik } from 'formik';
 
  
 
- export const ProfilAdd = () => {
+ const ProfilAdd = () => {
 
-    const url = "http://localhost:3000/Profiles"
+    const url = "http://localhost:3000/Profiles";
     let id = useId();
+
+    const { log, setLog } = useContext(MyContext);
+
+    useEffect(()=>{
+      setLog(prev => [...prev, {
+        action: `mount component profilAdd `,
+        datatime: new Date()
+      }])
+    },[]);
 
    const formik = useFormik({
      initialValues: {
@@ -23,6 +34,10 @@ import { useFormik } from 'formik';
             "id": id,
             ...values};
         add(newValue,url);
+        setLog(prev => [...prev, {
+          action: `add profile ${newValue.id} `,
+          datatime: new Date()
+        }])
      },
 
    });
@@ -82,3 +97,4 @@ import { useFormik } from 'formik';
    );
 
  };
+ export default ProfilAdd;

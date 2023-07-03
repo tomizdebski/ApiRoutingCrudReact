@@ -7,7 +7,7 @@ import { useId } from "react";
 
  
 
- export const ShopAdd = () => {
+const ShopAdd = () => {
 
     const url = "http://localhost:3000/Shops";
     
@@ -122,3 +122,4 @@ import { useId } from "react";
    );
 
  };
+ export default ShopAdd;

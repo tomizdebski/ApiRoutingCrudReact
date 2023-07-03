@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { add, updateId, deleteId } from "../crud"
 import { Link } from "react-router-dom";
 import "./Shops.css"
+import useLogger from "../useLogger";
 
 
-export const Shops = ()=> {
+const Shops = ()=> {
 
     const[shops, setShops] = useState([]);
 
@@ -40,6 +40,8 @@ export const Shops = ()=> {
         </>
     )
 }
+
+export default Shops;
 
 
 

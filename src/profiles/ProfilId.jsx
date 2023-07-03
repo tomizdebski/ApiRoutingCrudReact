@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 
-export const ProfilId = ()=> {
+const ProfilId = ()=> {
 
     let { id } = useParams();
     console.log(id);
@@ -33,3 +33,4 @@ export const ProfilId = ()=> {
         </>
     )
 }
+export default ProfilId;

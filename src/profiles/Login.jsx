@@ -1,6 +1,8 @@
-import { add, updateId, deleteId } from "../crud"
+
 import React from 'react';
 import { useState, useEffect } from "react";
+import { useContext } from 'react';
+import { MyContext } from '../MyContext';
 import axios from "axios";
 import { useId } from "react";
 import "./ProfilAdd.css"
@@ -8,11 +10,21 @@ import { useFormik } from 'formik';
 
  
 
- export const Login = () => {
+ const Login = () => {
 
-    const url = "http://localhost:3000/Profiles"
+    const url = "http://localhost:3000/Profiles";
+
+    const { log, setLog } = useContext(MyContext);
+
+    useEffect(()=>{
+      setLog(prev => [...prev, {
+        action: `mount component login `,
+        datatime: new Date()
+      }])
+    },[]);
+
+
     
-
     const[users, setUsers] = useState([]);
 
     useEffect(() => {
@@ -23,7 +35,6 @@ import { useFormik } from 'formik';
       }
     , []);
 
-    console.log(users);
 
    const formik = useFormik({
 
@@ -38,11 +49,20 @@ import { useFormik } from 'formik';
 
      onSubmit: values => {
         console.log("uzytkownicy",users);
-        console.log("zalogowany", values);  
+        console.log("dane logowania", values);  
         users.map(el => {
           if(el.email === values.email && el.password === values.password){
             console.log("zostałeś zalogowany");
-          }else console.log("niestety nie zostałeś zalogowany");
+            setLog(prev => [...prev, {
+              action: `logowanie `,
+              datatime: new Date()
+            }])
+          }else {
+            setLog(prev => [...prev, {
+              action: `logowanie - nieudana próba `,
+              datatime: new Date()
+            }])
+            console.log("niestety nie zostałeś zalogowany")};
         });
      },
 
@@ -93,3 +113,5 @@ import { useFormik } from 'formik';
    );
 
  };
+
+ export default Login;
